@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* form */
+
+body{
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:black;
+}
+
+#contactus input[type="text"],textarea{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	border: 1px solid #999;
+	padding: 5px 5px 5px 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#contactus input[type="text"]
+{
+  height:25px;
+  width:640px;
+  
+  
+  
+    
+  
+}
+
+
+#contactus textarea
+{
+  height:120px;
+  width:640px;
+  font-size: 1.2em;
+  font-weight: bold; 
+ 
+ 
+    
+}
+
+
+
+input[type=button],input[type=submit],button{
+    background-color: #008F77;
+    width:640px;
+    height:35px;
+    line-height:35px;
+    border:none;
+    color:#FFF;
+    cursor:pointer;
+}
+input[type=button],input[type=reset],button{
+    background-color: #008F77;
+    width:640px;
+    height:35px;
+    line-height:35px;
+    border:none;
+    color:#FFF;
+    cursor:pointer;
+}

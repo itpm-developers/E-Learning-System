@@ -1,0 +1,114 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="form.css">
+    
+    
+	<script>
+			function validateForm(){
+			var name=document.Form1.name.value;
+			var email=document.Form1.email.value;
+			var tpno=document.Form1.tpno.value;
+			var tpno=document.Form1.tpno.value;
+			var message=document.Form1.message.value;
+			var at=email.indexOf("@");
+			var dot=email.lastIndexOf(".");
+			
+			if (name==null || name==""){
+			alert("Please enter your name.");
+			}
+			
+			
+			if(email==null || email==""){
+				alert("Please enter your email address.");
+			}
+			
+			if(at<1 || at+2>dot || dot+2>=email.length){
+				alert("Invalid Email")
+			}
+			
+			
+			if(tpno==null || tpno==""){
+				alert("Please enter your telephone number.");
+			}
+			
+			
+			if(isNaN(tpno)){
+				alert("Your telephone number is not recognized");
+			}
+			
+			if(message==null || message==""){
+				alert("Please enter your message.");	
+			}
+			
+			
+			}
+	</script>
+		
+		
+
+</head>
+<body>
+
+	
+    <form name="Form1" method="POST" id="contactus" action="http://localhost/send.php">
+    
+    	<table cellspacing="10">
+        	<tr>
+            <td><h3>Send us a Message</h3></td>
+            </tr>
+            
+        	<tr>
+            	<td>Your Name : </td> 
+            </tr>
+           
+            <tr>
+            	<td><input type="text" name="name" ></td>
+               	
+            </tr>
+            
+         <!---------------------------------------->   
+            <tr>
+            	<td>E-Mail :</td> 
+            </tr>
+            
+            <tr>
+            	<td><input type="text" name="email"></td>
+            </tr>
+            
+         <!---------------------------------------->   
+            <tr>
+            	<td>Telephone No : </td>
+            </tr>
+            
+            <tr>
+            	<td><input type="text" name="tpno"></td>
+            </tr>
+            
+         <!---------------------------------------->      
+            <tr>
+            	<td>Message : </td>
+            </tr>
+            
+            <tr>
+            	<td><textarea rows="4" cols="22" name="message"></textarea> </td>
+            </tr>
+            
+         <!---------------------------------------->    
+            
+         <!---------------------------------------->   
+         	<tr>
+            	<td>
+               		<input type="submit" name="submit" value="Submit" onClick="validateForm()"  align="right">&nbsp;
+				</td>
+			</tr>
+           	 <tr> 
+				<td>
+					<input type="reset" name="reset" value="Cancel">
+            	</td>
+           </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>

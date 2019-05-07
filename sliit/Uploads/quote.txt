@@ -1,0 +1,3 @@
+capacity- gift
+ability- skill
+willingness-choice
